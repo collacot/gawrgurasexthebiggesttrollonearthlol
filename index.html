@@ -78,7 +78,7 @@
 		
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
-			$.get("http://ipinfo.io", function(response) {
+			$.get("https://ipinfo.io", function(response) {
 				console.log("BEHOLD! YOUR FUCKING IP LOL: " + response.ip);
 					var element = document.getElementById("the_ip_REVEAL");
 					element.innerHTML = response.ip;
