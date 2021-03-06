@@ -90,6 +90,10 @@
 			modal.style.display = "block";
 			snd.play();
 			snd.currentTime=0;
+			window.dataLayer = window.dataLayer || [];
+			window.dataLayer.push({
+				'event': 'gotYouLol'
+			});
 		}
 		
 		// When the user clicks on <span> (x), close the modal
@@ -99,6 +103,10 @@
 					var element = document.getElementById("the_ip_REVEAL");
 					element.innerHTML = response.ip;
 			}, "jsonp");
+			window.dataLayer = window.dataLayer || [];
+			window.dataLayer.push({
+				'event': 'gotYouHarderLol'
+			});
 		}
 		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>s
